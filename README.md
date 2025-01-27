@@ -21,13 +21,9 @@ A estrutura da Landing Page consiste em:
 ## Como Visualizar o Projeto
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   (https://github.com/alairalves/landingingles)
    ```
-2. Navegue até a pasta do projeto:
-   ```bash
-   cd nome-do-repositorio
-   ```
-3. Abra o arquivo `index.html` em seu navegador preferido.
+
 
 ## Capturas de Tela
 Adicione aqui algumas imagens do projeto rodando em diferentes tamanhos de tela para ilustrar a responsividade.

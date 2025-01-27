@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+
+/* geral */
 *{
     margin: 0;
     padding: 0;
@@ -15,40 +17,57 @@
 }
 body {
     width: 100%;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     background-color: white;
     font-family: 'poppins', sans-serif;  /* Define a fonte */
     font-size: 18px;                   /* Tamanho padrão da fonte */
 }
-.section1{
-    display: flex;
-    padding: 200px 200px 500px 200px;
-    height: 50vh;
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 10% 0 10%;
 }
-#div1{
-    width: 50%;
+
+.flex{
     display: flex;
+    width: 100%;
+}
+
+/* topo do site */
+
+section.topo-do-site .flex{
     justify-content: center;
-    flex-direction: column;
-    padding-top: 15%;
-    
+    padding-top: 10%;
+    gap: 40px;
 }
-#div1 p{
-    font-size: 20px;
+
+.topo-do-site .txt-topo-site p{
+    color:var(--dark);
+    font-size: 22px;
+    width: 100%;
+    padding-top: 10px;
 }
-#div2 p{
+.topo-do-site .txt-topo-site{
+    width: 50%;
+    padding-top: 40px;
+}
+.topo-do-site .formulario{
+    width: 50%;
+}
+
+.topo-do-site .formulario p{
     text-align: center;
+    margin: 10px auto; /* Centraliza horizontalmente no contêiner */
 }
-#div2{
-    width: 50%;
-    justify-content: center;
-    flex-direction: column;
+
+.topo-do-site .formulario .form{
+    transform: scale(0.8); /* Reduz o formulário para 80% do tamanho original */
+    transform-origin: top;
 }
-#form{
-    justify-content: center;
-    padding-left: -10%;
+
+.topo-do-site .formulario p{
+    font-size: 15px;
 }
 
 label {
@@ -58,7 +77,7 @@ label {
     font-family: Arial, sans-serif; /* Define a fonte */
     line-height: 1.5;   /* Ajusta o espaçamento entre linhas */
     margin-left: 10px;
-  }
+}
 
 
 form input, form textarea{
@@ -88,30 +107,53 @@ input[type="submit"]:hover{
     background-color: var(--white);
     color:var(--azul);
 }
+
+/* section 2  */
+
 .section2{
     
     display: flex;
     flex-direction: column;
-    padding: 10% 0 0% 0;
+    padding: 0;
     text-align: center;
     align-items: center;
     
 }
-.section3{
-    padding: 4% 0 5% 0; 
-    display: flex;
-    padding: 200px 200px 400px 200px;
-    height: 50vh;
+
+/* section 3 */
+
+.section3 .interface{
+    padding-top: 0%;
 }
+.section3 .flex{
+    gap: 40px;
+}
+
+.div3-img{
+    width: 50%;
+}
+
+#div3-txt{
+    width: 50%;
+    display: flex;             /* Ativa o Flexbox */
+    justify-content: center;   /* Centraliza horizontalmente */
+    align-items: center;       /* Centraliza verticalmente */  
+}
+
+.section3 h4{
+    font-weight: normal;
+}
+
+/* section 4 */
 .section4{
     display: flex;
     flex-direction: column;
-    padding: 4% 0 0 4%;
+    padding: 4% 0 4% 0;
     align-items: center;
     
 }
 .botao2{
-    padding: 10px 30%;
+    padding: 5px 30%;
     font-size: 20px;
     background-color: var(--azul);
     border: 1px solid var(--azul);
@@ -128,41 +170,171 @@ input[type="submit"]:hover{
     background-color:var(--white);
     color:var(--azul);
 }
+/* section 5 */
 .section5{
     display: flex;
     flex-direction: column;
-    padding: 4% 0 0 0;
+    padding: 4% 0 2% 0;
     text-align: center;
     align-items: center;
 }
+
+/* section 6 */
+
 .section6{
-    padding: -40% 0 5% 0; 
     display: flex;
-    padding: 200px 200px 400px 200px;
+    padding: 0px 200px 400px 200px;
     height: 50vh;
 }
 .section6 h4{
     font-weight: normal;
 }
-#div3{
-    width: 50%;
-    justify-content: center;
-    flex-direction: column;
+
+.section6 .interface{
+    padding-top: 0%;
 }
-#div4{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 25% 0 0 5%;
-}
+
+/* section 7 */
+
 .section7{
     display: flex;
-    flex-direction: column;
-    padding: 200px 200px 200px 200px;
+    padding: 150px 200px 200px 200px;
     text-align:justify;
     align-items: center;
 }
 .section7 h4{
     font-weight: normal;
+}
+
+
+@media screen and (max-width: 1300px){
+    
+    /* classe geral */
+    .flex{
+        flex-direction: column;
+    }
+    
+    .topo-do-site .txt-topo-site{
+        width: 100%;
+        padding-top: 5px;
+    }
+
+    .topo-do-site .txt-topo-site p{
+        font-size: 25px;
+        width: 100%;
+        padding-top: 10px;
+        text-align: center;
+        text-align: justify;
+    }
+    
+    .topo-do-site .formulario{
+        width: 100%;
+        padding: 0 8% 0 8%;
+    }
+
+    .topo-do-site .formulario p{
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .topo-do-site .formulario .form{
+        transform: scale(1.0);
+    }
+
+    form input, form textarea{
+        padding:10px;
+        flex-direction: column;
+        display: flex;
+        min-width: 100%;
+        border: 1px solid #1977f3;
+        border-radius: 10px;
+    }
+    input[type="submit"]{
+        padding: 15px 30px;
+        font-size: 20px;
+        background-color: var(--azul);
+        border: 1px solid var(--azul);
+        border-radius: 10px;
+        cursor: pointer;
+        color: white;
+        transition: 0.5s;
+        width: 50%;
+        justify-content: center;
+        min-width: 100%;
+    }
+    input[type="submit"]:hover{
+        background-color: var(--white);
+        color:var(--azul);
+    }
+    /* terminar de configurar o formulario */
+
+    /* section 2 */
+
+    .section2{
+        padding: 5% 0 5% 0;
+        margin-top: 20px;
+        
+    }
+
+    /* section 3 */
+    .section3 .flex {
+        gap:0;
+        text-align: justify; 
+    }
+    #div3-txt{
+        width: 100%;
+        padding: 0 1% 15px 1%;
+        
+    }
+    #div3-img img{
+        width: 400px;
+    }
+
+    /* section 4 */
+    .section4{
+        padding: 10% 5%;
+    }
+
+    .section6{
+        justify-content: center; /* Centraliza horizontalmente */
+        text-align: justify;    /* Justifica o texto */
+        padding: 0 4% 50px 4%;
+        
+    }
+    .section6 .div3-txt{
+        width: 100%;
+        padding: 0 10% 15px 10%; 
+    }
+    .section6 .div3-img{
+        justify-content: center;
+        margin-bottom: 20px; /* Adiciona espaçamento entre o texto e a imagem */
+    }
+    .section6 h1{
+        text-align: center;
+    }
+
+    /* fim da section 6 */
+
+    .section7{
+        padding: 0%;
+        margin-top: 800px;
+        align-items: normal;
+        justify-content: center; /* Centraliza horizontalmente */
+        text-align: justify;    /* Justifica o texto */
+    }
+    .section7 .interface{
+        width:100%;
+    }
+    .section7 .flex{
+        padding: 0%;
+    }
+    
+
+
+
+
+
+
+
+
 }
